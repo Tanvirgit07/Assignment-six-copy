@@ -3,7 +3,11 @@ const loadedData = async() =>{
     const res = await fetch(url);
     const data = await res.json();
     const posts = data.posts;
-    getDataOfPosts(posts);
+    
+    //    setTimeout(() => {
+        getDataOfPosts(posts);
+    //    },2000)
+   
 }
 
 const getDataOfPosts = (elements) =>{
@@ -77,9 +81,7 @@ const marksPart =async (title,view) =>{
 }
 
 const inputValue = () =>{
-  setTimeout(()=>{
-    loadSpinner(true),2000;
-  })
+  loadSpinner(true);
   const getInput = document.getElementById('Search_input').value;
   getCategory(getInput);
 }
@@ -89,7 +91,11 @@ const getCategory = async(element) =>{
   const res = await fetch(url);
   const data = await res.json();
   const getPost = data.posts
-  getDataOfPosts(getPost);
+  
+   setTimeout(() =>{
+    getDataOfPosts(getPost);
+   },2000)
+ 
   // console.log(getPost);
 }
 
