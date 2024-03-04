@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tanvir Website</title>
+    <!-- link tailwind and daisyUI  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- link css  -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="container mx-auto">
+      <nav class="lg:flex justify-between items-center mt-3">
+        <div>
+          <h1
+            class="font-black text-4xl text-[#12132D] font-mulish text-center lg:mb-0 mb-4"
+          >
+            ReTro
+          </h1>
+        </div>
+        <div class="flex gap-5 items-center">
+          <div class="w-12 h-12">
+            <img src="icons/Frame 2.png" alt="" />
+          </div>
+          <div class="w-12 h-12">
+            <img src="icons/Frame 3.png" alt="" />
+          </div>
+          <div class="w-12 h-12">
+            <img src="icons/Frame 4.png" alt="" />
+          </div>
+          <div class="w-12 h-12">
+            <img src="icons/Frame 5.png" alt="" />
+          </div>
+          <div>
+            <button
+              class="bg-[#797DFC] px-6 py-2 rounded-3xl font-mulish lg:text-xl text-white"
+            >
+              Sign In
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <section class="my-14">
+        <div class="">
+          <div
+            class="lg:flex lg:justify-evenly bg-[#12132D] rounded-3xl lg:px-20 lg:py-24 px-6 py-6"
+          >
+            <div class="lg:w-1/2">
+              <h1
+                class="lg:text-6xl text-4xl font-black font-mulish text-[#FFFFFF] mb-5"
+              >
+                Welcome to the
+                <span
+                  class="bg-gradient-to-r from-[#797DFCFF] to-[#797DFC4D] inline-block text-transparent bg-clip-text"
+                  >ReTro</span
+                >
+                Forum
+              </h1>
+              <p
+                class="font-mulish text-xl font-medium text-[#FFFFFFCC] max-w-md mb-8"
+              >
+                Share your favorite opinion and win and wp forum coffee mug!
+              </p>
+              <div class="lg:w-9/12">
+                <label
+                  class="input input-bordered flex items-center gap-2 rounded-full"
+                >
+                  <input
+                    id="Search_input"
+                    type="text"
+                    class="grow"
+                    placeholder="Search here anything"
+                  />
+                  <button onclick="inputValue()" class="badge badge-info p-4">
+                    Search
+                  </button>
+                </label>
+              </div>
+            </div>
+            <div class="lg:flex flex-col justify-center lg:mt-0 mt-6">
+              <div class="bg-[#FFFFFF] lg:w-80 mx-auto p-5 rounded-2xl">
+                <div class="flex justify-between mb-2">
+                  <h1 class="font-medium text-2xl text-[#12132DCC] font-mulish">
+                    Registered Users
+                  </h1>
+                  <p class="font-medium text-2xl text-[#12132DCC] font-mulish">
+                    01
+                  </p>
+                </div>
+                <div class="flex justify-between mb-2">
+                  <h1 class="font-medium text-2xl text-[#12132DCC] font-mulish">
+                    Forum
+                  </h1>
+                  <p class="font-medium text-2xl text-[#12132DCC] font-mulish">
+                    05
+                  </p>
+                </div>
+                <div class="flex justify-between mb-2">
+                  <h1 class="font-medium text-2xl text-[#12132DCC] font-mulish">
+                    Topics
+                  </h1>
+                  <p class="font-medium text-2xl text-[#12132DCC] font-mulish">
+                    01
+                  </p>
+                </div>
+                <div class="flex justify-between">
+                  <h1 class="font-medium text-2xl text-[#12132DCC] font-mulish">
+                    Replies
+                  </h1>
+                  <p class="font-medium text-2xl text-[#12132DCC] font-mulish">
+                    01
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <section class="container mx-auto">
+      <h1
+        class="text-center text-4xl text-[#12132D] font-black font-mulish mb-6"
+      >
+        Let’s Discuss
+      </h1>
+      <div class="max-w-screen-sm mx-auto">
+        <p class="text-center font-normal text-lg text-[#12132D99] mb-10">
+          Yes, you can run unit tests and view the results directly within the
+          app. The integrated testing features allow for a streamlined .
+        </p>
+      </div>
+    </section>
+
+    <main class="container mx-auto">
+      <div class="ml-80">
+        <span id="spinner_part" class="hidden loading loading-spinner text-secondary"></span>
+      </div>
+      <section class="lg:flex justify-between container mx-auto">
+        <div id="post_container" class="lg:w-3/5">
+          
+      </div>
+
+        <div id="read_container" class="lg:w-1/3 p-5 rounded-xl bg-[#12132D0D]">
+          <div class="flex justify-between">
+            <h1 class="text-xl font-bold text-[#12132D] font-mulish">Title</h1>
+            <div class="flex gap-1">
+              <img class="w-5" src="icons/Frame.png" alt="" />
+              <p class="text-[#12132D99] font-normal text-base">
+                Mark as read (<span id="read_count">0</span>)
+              </p>
+            </div>
+          </div>
+
+          <div id="read_div"></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="lg:h-[64vh] md:h-[100vh] bg-[#12132D] my-16 rounded-2xl">
+          <div class="lg:flex justify-around items-center lg:py-10"> 
+            <div class="text-white mb-5 lg:mb-0">
+              <h1 class="text-4xl font-black font-mulish">Join Our Forum</h1>
+              <p class="py-6 max-w-2xl text-lg font-medium text-[#FFFFFFCC]">Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and view the results directly within the app. </p>
+              <button class="bg-[#797DFC] px-11 py-2 rounded-full">Registered Now</button>
+            </div>
+            <div class="border-t-4 border-gray-500 border-l-4 border-r-4 border-dashed px-3">
+              <img src="images/joinforum.png" class="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="">
+        <div id="latest_container" class="flex justify-between">
+          
+        </div>
+      </section>
+    </main>
+
+    <!-- link javascript  -->
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
+
