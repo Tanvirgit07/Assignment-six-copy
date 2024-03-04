@@ -23,7 +23,7 @@
   </head>
   <body>
     <header class="container mx-auto">
-      <nav class="lg:flex justify-between items-center mt-3">
+      <nav class="lg:flex justify-between items-center mt-10">
         <div>
           <h1
             class="font-black text-4xl text-[#12132D] font-mulish text-center lg:mb-0 mb-4"
@@ -33,16 +33,16 @@
         </div>
         <div class="flex gap-5 items-center">
           <div class="w-12 h-12">
-            <img src="icons/Frame 2.png" alt="" />
+            <img title="Home" src="icons/Frame 2.png" alt="">
           </div>
           <div class="w-12 h-12">
-            <img src="icons/Frame 3.png" alt="" />
+            <img title="Pane" src="icons/Frame 3.png" alt="" />
           </div>
           <div class="w-12 h-12">
-            <img src="icons/Frame 4.png" alt="" />
+            <img title="Add" src="icons/Frame 4.png" alt="" />
           </div>
           <div class="w-12 h-12">
-            <img src="icons/Frame 5.png" alt="" />
+            <img title="Flag" src="icons/Frame 5.png" alt="" />
           </div>
           <div>
             <button
@@ -166,7 +166,9 @@
             </div>
           </div>
 
-          <div id="read_div"></div>
+          <div id="read_div" class="w-full">
+
+          </div>
         </div>
       </section>
 
@@ -186,16 +188,30 @@
       </section>
 
       <section class="">
-        <div id="latest_container" class="flex justify-between">
+        <div id="latest_container" class=" lg:flex justify-between">
           
         </div>
       </section>
     </main>
 
+    <footer class="mt-28">
+        <div class="bg-[#12132D0D] p-20 ">
+            <h1 class="text-center text-[#12132D] font-black text-4xl mb-4">ReTro</h1>
+            <div class="max-w-xl mx-auto">
+              <p class="text-center">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
+            </div>
+            <div class="max-w-52 mx-auto flex items-center gap-5 mt-8 mb-10">
+                <div><img src="icons/Vector.png" alt=""></div>
+                <div><img src="icons/2.png" alt=""></div>
+                <div><img src="icons/3.png" alt=""></div>
+                <div><img src="icons/4.png" alt=""></div>
+            </div>
+            <div class="border-t-2 border-gray-500"></div>
+            <p class="text-center mt-10">2017, All Rights Reserved.</p>
+        </div>
+    </footer>
+
     <!-- link javascript  -->
     <script src="app.js"></script>
   </body>
 </html>
-
-
-
