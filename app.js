@@ -81,6 +81,8 @@ redDiv.appendChild(singleRedDiv)
 }
 
 const inputValue = () =>{
+  const postContainer = document.getElementById('post_container')
+  postContainer.innerHTML = "";
 loadSpinner(true);
 const getInput = document.getElementById('Search_input').value;
 getCategory(getInput);
